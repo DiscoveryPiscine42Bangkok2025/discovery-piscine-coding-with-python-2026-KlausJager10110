@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 value = input("Give me a number: ")
 
 try:

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import math
 
 number = input("Give me a number: ")
