@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 n = int(input("Enter a number\n"))
 
 for i in range(10):
