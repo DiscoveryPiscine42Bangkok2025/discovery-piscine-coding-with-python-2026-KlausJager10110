@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 num = int(input(""))
 
 if num < 0:
