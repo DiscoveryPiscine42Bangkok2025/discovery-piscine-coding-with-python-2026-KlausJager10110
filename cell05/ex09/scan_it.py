@@ -1,5 +1,7 @@
 #!/usr/bin/env python
+
 import sys
+import re
 
 if len(sys.argv) != 3:
     print("none")
@@ -7,9 +9,9 @@ else:
     keyword = sys.argv[1]
     text = sys.argv[2]
 
-    count = text.count(keyword)
+    matches = re.findall(keyword, text)
 
-    if count == 0:
+    if len(matches) == 0:
         print("none")
     else:
-        print(count)
+        print(len(matches))

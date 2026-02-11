@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 
 arr = [2, 8, 9, 48, 8, 22, -12, 2]
+new_arr = []
+
+for x in arr:
+    if x > 5:
+        new_arr.append(x + 2)
 
 print(arr)
-
-result = []
-
-for n in arr:
-    if n > 5:
-        result.append(n + 2)
-
-print(result)
+print(new_arr)
