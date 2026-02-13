@@ -132,14 +132,14 @@ def validate_board(board: str) -> dict:
     valid_pieces = {"K", "Q", "B", "P", "R"}
     for line in lines_without_space:
         for char in line:
-            if char != "." and char not in valid_pieces:
+            if char != "." and char.upper() not in valid_pieces:
                 return {
                     "valid": False,
                     "reason": f"Invalid character. Character must be one of {valid_pieces} or '.'",
                 }
 
     ### < ตรวจสอบว่ามีตัว King อยู่เพียง 1 ตัว > ###
-    king_count = sum(line.count("K") for line in lines_without_space)
+    king_count = sum(line.upper().count("K") for line in lines_without_space)
     if king_count != 1:
         return {
             "valid": False,
